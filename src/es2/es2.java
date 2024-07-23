@@ -5,13 +5,15 @@ import java.util.Scanner;
 public class es2 {
     public static void main(String[] args) {
 
-        Scanner scanner= new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.println("inserisci il numero");
-        String num= scanner.nextLine();
+        String num = scanner.nextLine();
         System.out.println(programmSwitch(Integer.parseInt(num)));
 
     }
-    public static String programmSwitch(int num){
+
+    public static String programmSwitch(int num) {
+
         return switch (num) {
             case 0 -> "zero";
             case 1 -> "uno";
